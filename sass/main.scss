@@ -1,0 +1,132 @@
+$red: #810000;
+$dark-red: #440000;
+$yellow: #EBF713;
+$white: #FFFFFF;
+$grey: #ABABAB;
+
+.bgred {
+    background: $red;
+}
+
+.bgdark-red {
+    background: $dark-red;
+}
+
+.white-font {
+    color: $white;
+}
+
+html, body, .container{
+    height: 100%;
+}
+
+* {
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+.container
+{
+    display:table;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 220px 0 20px 0; 
+    box-sizing: border-box;
+}
+
+.row
+{
+    height: 100%;
+    display: table-row;
+}
+
+.col-md-6 {
+    display: table-cell;
+    float: none;
+    width: 50%; 
+}
+
+@media (max-width: 768px) {
+    .col-md-6{
+        float: left;
+        width: 100%;
+    }
+    html {
+        overflow: scroll;
+    }
+    #info-footer {
+        bottom: 0;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .container{
+        padding: 30% 0 20px 0; 
+    }
+}
+
+#info-screen > div, #updates {
+    height: 100%;
+    position: relative;
+}
+
+#tab-content {
+    padding: 15px;
+    p {
+        color: $grey;
+    }
+}
+
+header {
+    text-align: center;
+    margin: 30px 0 20px 0;
+    padding: 10px 0px;
+    border-top: 3px solid $yellow;
+    border-bottom: 3px solid $yellow;
+}
+
+#location {
+    font-size: 2em;
+    padding:1em 1em 1em 1.5em;
+}
+
+#register-button {
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 15px 0px;
+    width: 50%;
+    margin-bottom: 30px;
+    background: $red;
+    border: 5px solid $yellow;
+}
+
+#updates {
+    padding-left: 30px;
+}
+
+a {
+    color: $white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $white;
+}
+
+.nav-tabs {
+    li a{
+        border-radius: 0;
+    }
+    li.active a{
+        background: $red;
+        border: 1px solid $red;
+        color: $white;
+    }
+    border-bottom: none;
+    background: $dark-red;
+}
